@@ -27,7 +27,7 @@ Perhaps, it is one of many variants.
 
 A rule found in each reference is slightly different from another.
 The final compiled rule of "my" Ludo can be understood better with 
-[glossary](docs/glossary.md) and [rules](docs/rules.md)
+[rules](docs/rules.md).
 
 ## References
 
