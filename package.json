@@ -32,9 +32,9 @@
   },
   "packageManager": "yarn@4.9.1",
   "imports": {
-    "#services": "./package_json_imports/services",
-    "#models": "./package_json_imports/models",
-    "#utils": "./package_json_imports/utils",
-    "#interfaces": "./package_json_imports/interfaces"
+    "#services": "./dist/services",
+    "#models": "./dist/models",
+    "#utils": "./dist/utils",
+    "#interfaces": "./dist/interfaces"
   }
 }
