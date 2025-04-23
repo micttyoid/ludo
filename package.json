@@ -19,7 +19,9 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
-    "typescript": "^5.8.3"
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.8.3",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
@@ -32,9 +34,10 @@
   },
   "packageManager": "yarn@4.9.1",
   "imports": {
-    "#services": "./dist/services",
+    "#interfaces": "./dist/interfaces",
     "#models": "./dist/models",
-    "#utils": "./dist/utils",
-    "#interfaces": "./dist/interfaces"
+    "#services": "./dist/services",
+    "#types": "./dist/types",
+    "#utils": "./dist/utils"
   }
 }

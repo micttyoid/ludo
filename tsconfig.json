@@ -14,17 +14,20 @@
     "baseUrl": "./", // ground for "paths"
     "skipLibCheck": true,
     "paths": {
-      "#services/*": [
-        "src/services/*"
+      "#interfaces/*": [
+        "src/interfaces/*"
       ],
       "#models/*": [
         "src/models/*"
       ],
+      "#services/*": [
+        "src/services/*"
+      ],
+      "#types/*": [
+        "src/types/*"
+      ],
       "#utils/*": [
         "src/utils/*"
-      ],
-      "#interfaces/*": [
-        "src/interfaces/*"
       ]
     }
   },
