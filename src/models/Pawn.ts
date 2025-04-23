@@ -1,14 +1,19 @@
 import { IPawn } from '#interfaces/IPawn'
+import { Entity } from '#models/Entity'
+import { IPlayer } from '#interfaces/IPlayer'
+import { UUIDv4 } from '#types/UUID'
 
-export class Pawn implements IPawn {
-    constructor(
-        public id: string,
-        public position: { x: number; y: number },
-        public readonly type: string,
-    ) {}
+export class Pawn extends Entity implements IPawn {
+    constructor(public position: { x: number; y: number }) {
+        super()
+    }
 
-    move(newX: number, newY: number): void {
-        this.position = { x: newX, y: newY }
-        console.log(`Moved ${this.type} ${this.id} to (${newX}, ${newY})`)
+    public static find_player_by_id(id: UUIDv4): Pawn | undefined {
+        return Entity.find_by_id<Pawn>(id)
+    }
+
+    public move(new_x: number, new_y: number): void {
+        this.position = { x: new_x, y: new_y }
+        //return this._pawns[0]
     }
 }

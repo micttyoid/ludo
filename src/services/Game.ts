@@ -11,31 +11,33 @@ export class Game {
         this._max_players = max_players
     }
 
-    add_player(id: string, name: string): Player | null {
+    add_player(name: string): Player | null {
         if (this._players.length >= this._max_players) {
             throw new Error(
-                `Exceeded the maximum number of players (${this._max_players}). Cannot add player ${name}.`
+                `Exceeded the max number of players (${this._max_players}).` +
+                    `Cannot add player ${name}.`
             )
         }
 
-        const player = new Player(id, name)
+        const player = new Player(4, name)
         this._players.push(player)
         return player
     }
 
-    create_piece(id: string, x: number, y: number, type: string): Pawn {
-        const piece = new Pawn(id, { x, y }, type)
-        this._pawns.push(piece)
-        return piece
+    create_pawn(x: number, y: number): Pawn {
+        const pawn = new Pawn({ x, y })
+
+        this._pawns.push(pawn)
+        return pawn
     }
 
-    assign_piece(pieceId: string, playerId: string): boolean {
-        const piece = this._pawns.find((p) => p.id === pieceId)
+    assign_pawn(pawnId: string, playerId: string): boolean {
+        const pawn = this._pawns.find((p) => p.id === pawnId)
         const player = this._players.find((p) => p.id === playerId)
 
-        if (piece && player) {
-            player.add_piece(piece)
-            this._pawns = this._pawns.filter((p) => p.id !== pieceId)
+        if (pawn && player) {
+            //player.add_pawn(pawn)
+            this._pawns = this._pawns.filter((p) => p.id !== pawnId)
             return true
         }
         return false
