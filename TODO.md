@@ -151,3 +151,9 @@ Assigns explicitly for meta Ludo:
 ### Jamaican Variant
 
 ![Jamaican Variant](https://sweetjamaicashopping.com/cdn/shop/products/IMG-20201029-WA0022__10023_1445x.jpg)
+
+
+### Special effects
+
+Speicial effects from Variant 9
+![Speicial effects from Variant 9](https://shop-giiker.myshopify.com/cdn/shop/files/04.jpg)
