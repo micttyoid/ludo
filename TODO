@@ -1,5 +1,0 @@
-# TODO
-
-**Coordinate system for pawn**
-- Can tell base, entry, home(destination)
-- Can handle board variation(of N players where N != 4)
