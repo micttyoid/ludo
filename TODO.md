@@ -14,9 +14,8 @@ number_of_players * 2 * (length_finishline + 1)
 ```
 
 The total number of safe zones(including entries):
-```
-number_of_players * 2
-```
+- if `distance_to_safezone_from_edge` is undefined: `number_of_players`
+- if `distance_to_safezone_from_edge` is defined: `number_of_players * 2`
 
 ### Example 1.
 
