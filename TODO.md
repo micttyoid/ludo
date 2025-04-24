@@ -60,3 +60,14 @@ This implies all of the follwings:
 
 This implies all of the follwings:
 - The length of any sidewalk(side from any finishline) is 6
+
+### Example 5.
+
+![Variant5](https://image.winudf.com/v2/image/Y29tLnByb3BoZXRpY2FwcHMua2luZy5sdWRvcGxheV9zY3JlZW5fM18xNTE0NTk2NDY3XzAyNA)
+
+- `number_of_players` = 5
+- `length_finishline` = 5
+- `distance_to_safezone_from_edge` = 2
+
+This implies all of the follwings:
+- The length of any sidewalk(side from any finishline) is 6
