@@ -84,8 +84,8 @@ This implies all of the follwings:
 - `safezone_other_than_entry_per_player`= 0
 
 Assigns explicitly for meta Ludo
-- `length_sidewalk` = 4   **(via 8/2 NOT really "side" at this point...)**
-- `pawns_per_player` = 3
+- `length_sidewalk` = 4  **Not Meta**
+- `pawns_per_player` = 3 **Meta**
 
 ### Example 7. (Meta)
 
@@ -96,10 +96,37 @@ Assigns explicitly for meta Ludo
 - `safezone_other_than_entry_per_player`= 1
 - `distance_to_safezone_from_edge` = 2
 
-
 Assigns explicitly for meta Ludo
 - `length_sidewalk` = 4 + **FAST LANE** effects
-- `pawns_per_player` = 4
+- `pawns_per_player` = 4 **Not Meta**
+
+**NOTE**: it looks like you don't skip the corner between sidewalks?
+
+### Example 8
+
+It may look like meta, but it isn't
+
+![Variant 8](https://cdn.vectorstock.com/i/1000v/34/23/ludo-board-game-vector-8703423.jpg)
+
+- `max_number_of_players` = 4
+- `length_finishline` = 4
+- `safezone_other_than_entry_per_player`= 0
+- `distance_to_safezone_from_edge` = undefined
+
+Implies:
+- `length_sidewalk` = 5 **Not meta**
+- `pawns_per_player` = 4 **Not meta**
+
+
+## Thinking of possible variant
+
+### Discriminatory variant
+
+- Violates equal value among players: sidewalk, pawns, ...
+
+### Odd number in even palace
+- Distance from entry-to-entry is odd: cannot get length of sidewalk
+
 
 
 ## Jeez! I may not cover?
