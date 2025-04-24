@@ -117,6 +117,24 @@ Implies:
 - `length_sidewalk` = 5 **Not meta**
 - `pawns_per_player` = 4 **Not meta**
 
+### Example 9 (Meta)
+
+> Odd number in even place
+
+![Variant 9](https://shop-giiker.myshopify.com/cdn/shop/files/02.jpg)
+
+The entry-to-entry distance is odd. Therefore, it cannot have the length of 
+sidewalk. Besides:
+- `max_number_of_players` = 4
+- `length_finishline` = 4
+- `safezone_other_than_entry_per_player`= 0
+- `distance_to_safezone_from_edge` = undefined
+
+Assigns explicitly for meta Ludo:
+- `length_sidewalk` = **Cannot be determined**
+- `pawns_per_player` = 3 **meta**
+
+**NOTE**: Are those thin lines, something like FAST LANEs?
 
 ## Thinking of possible variant
 
@@ -124,9 +142,8 @@ Implies:
 
 - Violates equal value among players: sidewalk, pawns, ...
 
-### Odd number in even palace
+### Odd number in even place(FOUND)
 - Distance from entry-to-entry is odd: cannot get length of sidewalk
-
 
 
 ## Jeez! I may not cover?
