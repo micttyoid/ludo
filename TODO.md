@@ -98,7 +98,7 @@ Assigns explicitly for meta Ludo
 
 
 Assigns explicitly for meta Ludo
-- `length_sidewalk` = 6 + **FAST LANE** effects, **(via 12/2 NOT really "side" at this point...)**
+- `length_sidewalk` = 4 + **FAST LANE** effects, **(via 12/2 NOT really "side" at this point...)**
 - `pawns_per_player` = 4
 
 
