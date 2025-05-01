@@ -1,6 +1,38 @@
 import { Player } from '#models/Player'
 import { Pawn } from '#models/Pawn'
 
+export class SafeZone {
+    // Entry is considered the zero-th
+    constructor(
+        public readonly nth_safe_zone: number,
+        public readonly distance_to_entry: number = 5 // The closest
+    ) {
+        // TODO what else from variants?
+    }
+}
+
+// Default values are the
+export class Topology {
+    private readonly _safe_zones: ReadonlyArray<SafeZone>
+    private readonly _n_safe_zones: number
+
+    constructor(
+        public readonly max_players: number = 4,
+        public readonly n_pawns_per_player: number = 4,
+        public readonly length_finishline: number = 5,
+        public readonly entry_to_entry: number = 5,
+        // Beside the entry(zero-th)
+        safe_zones: SafeZone[] = [new SafeZone(1)]
+    ) {
+        this._safe_zones = [...safe_zones]
+        this._n_safe_zones = this._safe_zones.length
+    }
+
+    get safe_zones(): ReadonlyArray<SafeZone> {
+        return this._safe_zones
+    }
+}
+
 export class Game {
     private _players: Player[] = []
     private _pawns: Pawn[] = []
