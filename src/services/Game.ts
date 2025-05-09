@@ -58,7 +58,6 @@ export class Game {
 
     create_pawn(x: number, y: number): Pawn {
         const pawn = new Pawn({ x, y })
-
         this._pawns.push(pawn)
         return pawn
     }
